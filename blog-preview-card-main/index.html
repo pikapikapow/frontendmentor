@@ -28,8 +28,8 @@
       background-color: hsl(0, 0%, 100%);
       padding: 20px;
       border-radius: 20px;
-      height: 60%;
-      width: 36%;
+      height: auto;
+      width: 360px;
       box-shadow: 10px 10px;
       font-size: 16px;
     }
@@ -62,16 +62,21 @@
       color: hsl(0, 0%, 50%);
     }
 
-    .img2 {
-      width: 50px;
-      margin: 0;
+    .user {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 15px;
     }
 
+    .img2 {
+      width: 50px;
+    }
+
+
+
     .author {
-      display: inline;
-      margin: 10px;
-      margin-left: 20px;
-      bottom: 10px;
+      font-weight: bold;
     }
 
     .attribution {
@@ -100,10 +105,12 @@
 
     <p class="desc">These languages are the backbone of every website, defining structure, content, and presentation.
     </p>
+    <div class="user">
+      <img src="./assets/images/image-avatar.webp" alt="" class="img2">
 
-    <img src="./assets/images/image-avatar.webp" alt="" class="img2">
+      <p class="author">Greg Hooper</p>
+    </div>
 
-    <p class="author">Greg Hooper</p>
 
 
 
