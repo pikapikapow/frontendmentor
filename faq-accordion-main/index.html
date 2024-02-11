@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-image: url(./assets/images/background-pattern-desktop.svg);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+      background-color: hsl(275, 100%, 97%);
+    }
+
+    .container {
+      font-family: "Work Sans", sans-serif;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      flex-direction: column;
+      background-color: hsl(0, 0%, 100%);
+      width: 400px;
+      height: 390px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+    }
+
+    h1 {
+      display: inline;
+      margin: 10px;
+    }
+
+    .question {
+      display: inline;
+    }
+
+    .show {
+      height: 40px;
+      width: 40px;
+    }
+
+
+    .answer {
+      display: hidden;
+    }
+
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      visibility: hidden;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="title">
+      <img src="./assets/images/icon-star.svg" alt="">
+      <h1>FAQs</h1>
+    </div>
+
+
+    <h3 class="question">What is Frontend Mentor, and how will it help me?</h3>
+    <img src="./assets/images/icon-plus.svg" alt="" class="show">
+
+
+    <p class="answer">
+      Frontend Mentor offers realistic coding challenges to help developers improve their
+      frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+      all levels and ideal for portfolio building.
+    </p>
+
+    <h3 class="question">Is Frontend Mentor free?</h3>
+    <img src="./assets/images/icon-plus.svg" alt="" class="show">
+
+
+    <p class="answer">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+      option providing access to a range of projects suitable for all skill levels.</p>
+
+    <h3 class="question">Can I use Frontend Mentor projects in my portfolio?</h3>
+
+    <img src="./assets/images/icon-plus.svg" alt="" class="show">
+
+    <p class="answer">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+      way to showcase your skills to potential employers!</p>
+
+    <h3 class="question">How can I get help if I'm stuck on a Frontend Mentor challenge?</h3>
+    <img src="./assets/images/icon-plus.svg" alt="" class="show">
+
+
+    <p class="answer">The best place to get help is inside Frontend Mentor's Discord community. There's a help
+      channel where you can ask questions and seek support from other community members.</p>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+
+</body>
+
+</html>
