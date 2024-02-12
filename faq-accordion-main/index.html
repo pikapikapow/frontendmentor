@@ -15,28 +15,40 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
     body {
-      background-image: url(./assets/images/background-pattern-desktop.svg);
+      position: relative;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      /* background-color: hsl(275, 100%, 97%); */
+      margin: 0;
+    }
+
+    .header-img {
+      position: absolute;
+      top: 0;
+      background-image: url(./assets/images/background-pattern-desktop.svg);
       background-repeat: no-repeat;
-      background-size: 100% 300px;
-      background-color: hsl(275, 100%, 97%);
+      background-size: cover;
+      height: 200px;
+      width: 100vw;
     }
 
     .container {
+      z-index: 10;
       font-family: "Work Sans", sans-serif;
       display: flex;
       justify-content: center;
-      /* align-items: center; */
       flex-direction: column;
       background-color: hsl(0, 0%, 100%);
-      width: 400px;
-      height: 390px;
-      padding: 20px;
+      
+      width: 450px;
+      height: auto;
+      padding: 35px;
       border-radius: 15px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .title {
@@ -49,21 +61,46 @@
       margin: 10px;
     }
 
+    p {
+      font-size: 16px;
+    }
+
+    .questions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     .question {
       display: inline;
+      width: 70%;
     }
+
+    .question:hover {
+      color: #AD28EB;
+      cursor: pointer;
+    }
+
+
 
     .show {
       height: 40px;
       width: 40px;
+
     }
 
+    .show:hover {
+      cursor: pointer;
+    }
 
     .answer {
-      display: hidden;
+      display: none;
+      color:hsl(292, 16%, 49%);
     }
 
-
+    .open {
+      display: block;
+    }
 
     .attribution {
       font-size: 11px;
@@ -74,45 +111,85 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    @media only screen and (max-width: 376px){
+
+      body {
+        height: auto;
+      }
+
+      .container {
+        width: 250px;
+        padding: 15px;
+        margin: 50px 10px 0;
+        
+      
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      img.show {
+        padding-left: 0;
+      }
+    }
+
+
   </style>
 </head>
 
 <body>
+  <div class="header-img"></div>
   <div class="container">
 
     <div class="title">
       <img src="./assets/images/icon-star.svg" alt="">
       <h1>FAQs</h1>
     </div>
-
+    <div class="questions">
 
     <h3 class="question">What is Frontend Mentor, and how will it help me?</h3>
     <img src="./assets/images/icon-plus.svg" alt="" class="show">
 
+    </div>
 
-    <p class="answer">
+
+    <p class="answer open">
       Frontend Mentor offers realistic coding challenges to help developers improve their
       frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
       all levels and ideal for portfolio building.
     </p>
 
-    <h3 class="question">Is Frontend Mentor free?</h3>
-    <img src="./assets/images/icon-plus.svg" alt="" class="show">
+    <div class="questions">
+      <h3 class="question">Is Frontend Mentor free?</h3>
+      <img src="./assets/images/icon-plus.svg" alt="" class="show">
+    </div>
+
+    
 
 
     <p class="answer">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
       option providing access to a range of projects suitable for all skill levels.</p>
-
+      <div class="questions">
     <h3 class="question">Can I use Frontend Mentor projects in my portfolio?</h3>
 
     <img src="./assets/images/icon-plus.svg" alt="" class="show">
-
+  </div>
     <p class="answer">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
       way to showcase your skills to potential employers!</p>
-
+      <div class="questions">
     <h3 class="question">How can I get help if I'm stuck on a Frontend Mentor challenge?</h3>
     <img src="./assets/images/icon-plus.svg" alt="" class="show">
-
+  </div>
 
     <p class="answer">The best place to get help is inside Frontend Mentor's Discord community. There's a help
       channel where you can ask questions and seek support from other community members.</p>
@@ -120,10 +197,10 @@
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+         Coded by <a href="#">Your Name Here</a>.
     </div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
