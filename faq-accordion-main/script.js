@@ -26,3 +26,34 @@ for (i = 0; i < questions.length; i++) {
     }
   });
 }
+
+let arr = [2, 7, 8, 3];
+
+// console.log(arr);
+// console.log(1);
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+console.log(arr[0]);
+console.log(arr[3]);
+console.log(arr.length);
+console.log(arr[arr.length - 1]);
+
+let person = {
+  name: "Alan",
+  age: 9,
+  favCol: "yellow",
+  grade: 4,
+};
+
+console.log(
+  person.name +
+    " is " +
+    person.age +
+    ", my favorite color is " +
+    person.favCol +
+    " I am in " +
+    person.grade +
+    "th grade"
+);
